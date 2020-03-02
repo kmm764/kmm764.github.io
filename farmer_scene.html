@@ -33,36 +33,152 @@
 								</header>
 
 							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>Farmer Scene with OpenGL</h1>
-									</header>
+                                <section>
+                                    <header class="main">
+                                        <h1>Farmer Scene with OpenGL</h1>
+                                    </header>
 
-									<span class="image main"><img src="images/pic11.jpg" alt="" /></span>
+                                    <span class="image main"><img src="images/farmer_scene00.jpg" alt="" /></span>
+                                    <p2><code>C++</code> <code>OpenGL</code> <code>GIMP</code> <code>Blender</code></p2>
+                                    <div class="space2"></div>
+                                    <h2> Showcase</h2>
+                                    <ul class="actions">
+                                        <li><a href="https://github.com/kmm764/Farmer-Scene-with-OpenGL" class="button">Github Repo</a></li>
+                                        <li><a href="https://www.youtube.com/watch?v=RxwaoF740Vk" class="button">Youtube</a></li>
+                                    </ul>
+                                    <hr class="major" />
+                                    <p>
+                                        <strong>Scene Description</strong><br />
+                                        The night scene is based in a rural area. There farmers have to wake up early in the
+                                        morning, before sunrise, in order to prepare for sowing. The scene is decorated with a bright
+                                        moon, a fully textured house, a animated windmill, animated lamp, animated farmers and
+                                        covered with a skybox. The farmers are using the hoe, forcing it onto the ground constantly
+                                        to prepare the land for sowing.
+                                    </p>
+                                    <p>
+                                        <strong>3D Modelling</strong><br />
+                                        All of the 3D models in the scene are made by using C++, Most objects are made from
+                                        cubes, from combining different cubes together. The house is the first 3D object i made in
+                                        this project. First building the base, then proceed onto the triangles above the base, then
+                                        roofs. After that I added doors, windows and lamp to the house. I learnt a lot from building
+                                        the house, from drawing planars, to applying texture.
+                                    </p>
+                                    <p>
+                                        <strong>Hierarchical Modelling</strong><br />
+                                        There are three objects in the scene that uses hierarchical modelling. The Human farmer,
+                                        the lamp and the windmill. Each of these modules are made from cubes, Where the cubes
+                                        rotates around the edge of the cube as a joint. For the Human farmer, his body consist of
+                                        different human parts, the upper and lower arms, the body, the head, and the upper and
+                                        lower legs, with ten parts in total. For the windmill, two cubes are used for the main body,
+                                        where the windshaft and the four blades are connected, where they can be rotated in
+                                        different directions. The lamp only consist of two parts, it might not fall into the category of
+                                        hierarchical modelling with only two parts, but the bottom part of the lamp is rotating based
+                                        on the bottom of the first part.
+                                    </p>
+                                    <p>
+                                        <strong>Animation</strong><br />
+                                        All of the objects I mentioned in
+                                        hierarchical modelling can be animated,
+                                        where animations are designed special
+                                        for the model’s movement. In the farmer
+                                        model, all of the farmers have
+                                        the same animation, where they swing
+                                        the hoe with their right hand, combined
+                                        with the body movement. The body
+                                        movement as a whole is a loop. Where
+                                        the loop is made from using both
+                                        deltatime and sine. Sine makes sure that
+                                        the body is moving back and forth instead
+                                        of in 360 degrees rotation. The farmer’s movement animation starting position is unique, to
+                                        not make the scene look too unrealistic, making sure they are not swing the hoe at the same
+                                        time.<br /><br />
+                                        For the lamp , it is consist of two parts, the
+                                        chain and the lamp. The chain and the lamp are
+                                        swinging back and forth constantly, with the lamp
+                                        swinging based on the bottom of the chain, and the
+                                        chain swings from the house’s roof.<br /><br />
+                                        For the windmill, all the blades and the windshaft is
+                                        rotating together in 360 degrees constanly. They are
+                                        all rotating based on the base of the windshaft. I
+                                        added an option for the user to speed the rotation up,
+                                        or make it stop. When holding the “u” button on the
+                                        Mac, the blades will stop rotating at the spot, without
+                                        reseting to the original position. When holding the “y”
+                                        button down, the blades and the windshaft will rotate
+                                        at three times
+                                        the normal
+                                        speed.
+                                    </p>
+                                    <p>
 
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                                        <strong>Lighting</strong><br />
+                                        For lightening, I used two light which is facing the
+                                        ground of the scene. The first light source is from the
+                                        moon, where the light source is placed next to the
+                                        moon, projecting dim light onto the ground. I added
+                                        more blue color into this light source to make it more
+                                        realistic, closer to real moon light. For the moon itself, I made a glow effect on the moon,
+                                        alongside with the walls of the skybox, to make the moon and stars glow in the dark as
+                                        shown as the picture above. I place another light source next to it, with ambient set to 0.8f,
+                                        while the global ambient is 0.01.f.<br /><br />
+                                        The other light source is the lamp which is
+                                        hanging from the house’s roof. The same as
+                                        the moon, the lamp is glowing with full
+                                        brightness comparing to the objects around
+                                        it. The lamp is an object with animation. As
+                                        the lamp swings, the light source swings
+                                        along with the lamp. As shown on the image
+                                        on the right, as the lamp swings towards the
+                                        left, light are projected further on the left,
+                                        and the window has noticeably got less light
+                                        on the right hand side.
+                                    </p>
+                                    <p>
 
-									<hr class="major" />
+                                        <strong>Texture</strong><br />
+                                        I textured all of my objects except the
+                                        human farmer’s body. When I was texturing
+                                        the objects, I overcame some difficulties, such as wrong rotation of the texture applied, or
+                                        wrong size. I managed to fix it as I make changes to glTexCoord2f, and as I include more
+                                        objects into the scene, I keep on replacing the old ugly texture with the new, better ones.
+                                        The moon’s texture for example, is taken from the nasa website. I replaced the old ugly
+                                        moon with this texture, which is a photo taken during the apollo mission. For most of my
+                                        objects, I applied seamless texture to it, so that the textures can be placed side by side
+                                        without creating a noticeable boundary between the two.
+                                    </p>
+                                    <p>
 
-									<h2>Interdum sed dapibus</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+                                        <strong>Environment</strong><br />
+                                        The environment theme is
+                                        acheived by using a skybox,
+                                        dim blue lights from the
+                                        moon, and the lights from
+                                        torches. As I am creating a
+                                        night scene, the theme of the
+                                        scene must be dark. I
+                                        choose stars in the dark as
+                                        the texture for my skybox,
+                                        where the skybox is facing
+                                        inwards. The ground of the
+                                        floor is created with a
+                                        Tessellation technique. With
+                                        the floor made up by small
+                                        quads, it can show proper light effects. In openGL, light is detected at the corners of the quad, therefor tessellation is needed for the lights to work on the floor. The walls of the
+                                        skybox is at ambient (1.0f,1.0f,1.0f), except the ground, where I make sure that the stars are
+                                        shining brightly, to create a better night atmosphere.
+                                    </p>
+                                    <p>
 
-									<hr class="major" />
+                                        <strong>User Control</strong><br />
+                                        Basic user controls are already implemented in the framework (WASD, and mouse). There
+                                        are a few additions added to the project. First, ‘m’ is added to increase the camera
+                                        movement by three times when holded. Secondly, ‘e’ and ‘c’ is added to move the camera
+                                        up and down. Thirdly, reset location is changed to a location with a better starting view.
+                                        Fourthly, ‘q’ is added to reset to another position, viewing the scene in a different angle.
+                                    </p>
 
-									<h2>Magna etiam veroeros</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 
-									<hr class="major" />
-
-									<h2>Lorem aliquam bibendum</h2>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-
-								</section>
+                                </section>
 
 						</div>
 					</div>
